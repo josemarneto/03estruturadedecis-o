@@ -15,10 +15,25 @@
     */
 
     //ENTRADA
-
-
+    const salario = Number(prompt("Informe seu salário atual"));
+    let bonus;
+    let reajuste;
     //PROCESSAMENTO
-
+    if (salario <= 2000) {
+        bonus = salario * 0.15;
+        reajuste = salario + bonus;
+    } else if (salario > 2000 && salario <= 3999) {
+        bonus = salario * 0.10;
+        reajuste = salario + bonus;
+    } else if (salario >= 4000 && salario <= 6999) {
+        bonus = salario * 0.10;
+        reajuste = salario + bonus;
+    } else if (salario > 7000) {
+        bonus = salario * 0.05;
+        reajuste = salario + bonus;
+    } else {
+        alert("Inválido né irmão")
+    }
     
     //SAÍDA
 
